@@ -1,0 +1,62 @@
+
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            overflow-x: hidden;
+        }
+        .Minav{
+            width: 20%;
+            height: 100%;
+            overflow: scroll;
+            position: fixed;
+            left:0;
+            z-index: 1;
+            background-color: black;
+            padding-top:40px;
+            transition: 0.5s;
+            transform: translate(-100%);
+        }
+        .show-side{
+            transform: translate(0);
+        }
+        .content-slide{
+            transition: 0.6s;
+            margin-left:19%
+        }
+        .myremove{
+            display: none;
+        }
+        .myadd{
+            display: block;
+        }
+        .Minav a{
+            font-size: 25px;
+            display: block;
+            line-height: 50px;
+             padding: 20 30px;
+            text-transform: capitalize;
+            text-decoration: none;
+            margin-left: 20px;
+            padding-top: 20px;
+        }
+        .Minav .myclose{
+            position: absolute;
+            top: 0px;
+            font-size: 40px;
+            color: red;
+            right: 28px;
+            margin-right: -10px;
+        }
+        .Minav a:hover{
+            font-size: 30px;
+            transition: 0.1s;
+            color: white;
+            text-decoration: none;
+            }
+            #content{
+                padding: 20px;
+                transition: margin-left 0.5s;
+            }
+            .addbtn{
+                transition: 0.6s;
+                transition-delay: 0.2s;
+            }

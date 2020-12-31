@@ -1,0 +1,31 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.scroll{
+    margin-top: 170px;
+    transition: 0.5s;
+}
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: var(--light-shadwo);
+}
+.top-link{
+    visibility: hidden;
+    z-index: -100; 
+}
+.show-toplink{
+    visibility: visible;
+    z-index:100;
+}
+@media screen and (min-width:768px){
+    .banner{
+        margin-top:20px;
+    }
+}
+
+
+

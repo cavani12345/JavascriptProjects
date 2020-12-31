@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic content</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/node_modules/font-awesome/css/font-awesome.min.css">
+    
+
+</head>
+<body >
+   <div class="container">
+       <div  class="row">
+           <div class="col-12 col-sm-12">
+            <ul class="nav justify-content-center bg-dark">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Services</a>
+                </li>
+              </ul>
+           </div>
+       </div>
+   </div> <br>
+   <div class="row">
+     <div class="col-12 col-sm-12 text-center">
+       <button class="btn btn-primary" data-id="All">ALL</button>
+       <button class="btn btn-primary " data-id="CEO"> CEO</button>
+       <button class="btn btn-primary" data-id="Software">Software</button>
+       <button class="btn btn-primary" data-id="Designer">Developer</button>
+     </div> 
+   </div><br>
+          <div class="container">
+           <div class="row" id="mydynamic">
+           </div>
+          </div>
+    
+ <script src="dynamic.js"></script>
+</body>
+</html>

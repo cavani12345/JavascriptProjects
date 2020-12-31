@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="../css/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/node_modules/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="content">
+        
+        <button class="btn bar" id="toggler"><span class="fa fa-bars text-white" ></span>   
+        </button>  
+        <button class="btn time" style=" display: none;"><span class="fa fa-times"></span></button>
+  
+        <div id="mynav" class="Minav">
+           
+            <a href="" class="active">home</a>
+            <a href="">services</a>
+            <a href="">about us</a>
+            <a href="">contact</a>
+            <a href="" class="active">home</a>
+            <a href="">services</a>
+            <a href="">about us</a>
+            <a href="">contact</a>
+            <a href="" class="active">home</a>
+            <a href="">services</a>
+            <a href="">about us</a>
+            <a href="">contact</a>
+        </div> 
+        <h2 id="myhead" >Responsive side bar</h2> 
+        <script>
+         const btn= document.querySelectorAll(".btn");
+         const mynav = document.getElementById("mynav");
+         const content= document.getElementById("content");
+         const time= document.querySelector(".time");
+         const bar= document.querySelector(".bar");
+        
+            btn.forEach(function(btn){
+            btn.addEventListener('click',function(e){
+             mynav.classList.toggle("show-side");
+             content.classList.toggle("content-slide");
+             if(e.currentTarget.classList.contains("bar")){
+                 bar.style.display= "none";
+                 time.style.display="block";
+             }
+             else if (e.currentTarget.classList.contains("time")){
+                bar.style.display= "block";
+                 time.style.display="none";
+             }
+            })
+         });
+         
+        </script>    
+</body>
+</html>

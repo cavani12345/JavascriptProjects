@@ -1,0 +1,16 @@
+.jumbotron{
+    background-color:blueviolet
+}
+.footer{
+    background-color: rgb(245, 80, 245);
+}
+.mynav{
+    background-color: darkblue
+}
+.mybtn{
+    border: 1px solid white;
+    opacity: 0.5;
+}
+@media screen and (max-width:576px){
+  
+}

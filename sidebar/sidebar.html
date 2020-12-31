@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="../css/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/node_modules/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="content">
+        <span id="content_head" style="margin-left: 80px;">
+        <a href="#" id="toggler"><i class="fa fa-bars" style="font-size: 40px;"></i></a></span>
+            
+        <div id="mynav" class="Minav">
+           
+            <a href="" class="active">home</a>
+            <a href="">services</a>
+            <a href="">about us</a>
+            <a href="">contact</a>
+        </div> 
+        <h2 style="margin-left: 120px;">Responsive side bar</h2> 
+        <script>
+         const toggler= document.getElementById("toggler");
+         const mynav = document.getElementById("mynav");
+         const content= document.getElementById("content");
+         toggler.addEventListener('click',function(){
+             mynav.classList.toggle("show-side");
+             content.classList.toggle("content-slide");
+         })
+        </script>    
+</body>
+</html>

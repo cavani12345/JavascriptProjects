@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scroll.css">
+</head>
+<body class="bg-dark">
+    <header id="home">
+    <nav class="navbar  navbar-expand-sm " id="nav" style="background-color: white;">
+        <div class="container">
+            <a class="navbar-brand" href="#"> <a class="navbar-brand mr-auto" href="#"><img src="../imgs/logo.png" height="30" width="41"></a></a>
+            
+            <button class="navbar-toggler" id="navtog" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"> <i class="fa fa-navicon" style="color:black; font-size:28px;"></i></i></span>
+            </button>
+            <div class="collapse navbar-collapse links-container" id="Navbar">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active scroll-link"><a class="nav-link text-dark  " href="#tours"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                        <li class="nav-item active scroll-link"><a class="nav-link text-dark " href="#about"><span class="fa fa-home fa-lg"></span> About</a></li>
+                        <li class="nav-item scroll-link"><a class="nav-link text-dark " href="#service"><span class="fa fa-info fa-lg"></span>Services </a></li>
+                        </ul>
+            </div>
+        </div>
+        
+    </nav> <br><br>
+    <div class="banner">
+    <div class="container text-white">
+            <h2>Scroll Project</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repellendus nostrum error perspiciatis totam in nulla voluptates, corrupti explicabo, odit quae, incidunt dolorum fugiat doloremque dolor aspernatur? Placeat, illum sint?</p>
+        <a href="#tours" class="btn btn-primary scroll-link" style="border: 2px solid white;">Explore</a>
+        </div>
+    </div>
+</header> <br><br>
+
+    <div class="row bg-white " style="height: 200px;" id="about">
+        <div class="col-12 col-sm-12 d-flex justify-content-center">
+    <div class="title">
+        <h2><span>About Us</span></h2>
+    </div>
+    </div>
+    </div>
+
+    <div class="row text-white bg-info" style="height: 200px;" id="service">
+        <div class="col-12 col-sm-12 d-flex justify-content-center">
+    <div class="title">
+        <h2><span>Services</span></h2>
+    </div>
+</div>
+</div>
+    <div class="row text-white bg-secondary" style="height: 200px;" id="tours">
+        <div class="col-12 col-sm-12 d-flex justify-content-center">
+    <div class="title">
+        <h2><span>Featured tours</span></h2>
+    </div>
+    </div>
+    </div>
+    <footer>
+        <div class="row text-white">
+            <div class="col-12 col-sm-12 d-flex justify-content-center ">
+                <p> copyright &copy; Akim Insurance limted
+                    <span id="date"></span>. all right reserved
+                </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <a href="#home" class="btn btn-primary  scroll-link top-link  "  style="animation: bounce 2s ease-in-out infinite;">
+                    <span><i class="fa fa-arrow-up"></i></span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../css/jquery-3.3.1.min.js"></script>
+    <script src="../css/bootstrap.min.js"></script>
+
+    <script src="scroll.js"></script>
+</body>
+</html>
